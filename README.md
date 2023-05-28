@@ -1,6 +1,6 @@
 # MetaLand-Simulation-Game
 
-I. AC¸IKLAMA :
+I. ACIKLAMA :
 
 
 Kocaeli Universitesi Bilgisayar Muhendisligi Programlama 
