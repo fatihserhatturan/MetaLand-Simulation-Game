@@ -55,7 +55,9 @@ istenen UML diyagramı icinse c gelis¸irmek icin
 kullandıgımız ortam olan visual studio’nun sınıf 
 goruntuleyicisi  ozelli  ginebas¸vurulmustur. [htbp] ˘
 III. YONTEM ¨
+
 A. Giris¸
+
 Giris¸ ekranında giris¸ yapan kisiden yonetici girisi mi 
 kullanıcı girisi mi yapmak istedgine gore sectirilir.Veya 
 kayıt olma ekranına gidilir.Yaptıgı secenege gore ekran- 
@@ -64,11 +66,15 @@ tenir.Ardından bu degerler kontrol edilir  eger oyuncu veya ˘,
 yonetici tabloları kontrol edilir eger kullanıcı varsa giris¸ yapılır ˘
 yoksa islem basarısız olur.Ayrıca burada oyuncunun kaynakları
 kontrol edilir eger tukenmisse giris¸ yapmasına izin verilmez. 
+
 B. Kayıt Olma
+
 Kayıt olma ekranında kullanıcıdan bilgiler alınır.Ardından
 metaLand adlı Db de kullanıcı tablosuna kaydedilir.Ve kul-
 lanıcıya kayıt olusturuldu bilgisi verilir.
+
 C. kullanıcı panel
+
 Burada yoneticiye harita id sorulur.Ve Secilen harita 
 ekrana verilir.Kontrol ekranında yonetici harita numarasını 
 ve boyutunu girerek harita olusturabilir.Haritaya kayıtlı
@@ -81,7 +87,9 @@ esya miktarı gosterilir.
 Is¸ talebi kısmında isilanları
 gorunt  ulenebilir uygunsa kabul edilebilir degilse pazarlık
 yapılabilir.Pazar kısmında satılıktaki menkuller satın alınabilir.
+
 D. harita-oyun
+
 Harita uzerinde gezinme yapılabili, begenilen ya da secilen bir.
 ’turVer’ adlı yontem, ’alanNo’ adlı bir tamsayı parametresi ¨
 alır. Saglanan baglantı dizesini kullanarak bir SQL verita- ˘
@@ -91,159 +99,173 @@ alanının degeri ’singleton.haritaID’ de ˘ giskeninin de ˘ gerieit ˘
 ve ’alanno’ alanının degeri saglanan ’alanNo’ parametresine ˘
 esit olan tum verileri secer. ¨
 Tabloda eslesen bir kayıt bulunursa, yontem kayıttan ¨
-’alantur¨ u’ alanının degerini alır, bir dizeye donustuur ve 
-’returnValue’ adlı bir degiskene atar. Son olarak, veritabanı ˘
+’alanturu alanının degerini alır, bir dizeye donustuur ve 
+’returnValue’ adlı bir degiskene atar. Son olarak, veritabanı 
 baglantısını kapatır ve ’returnValue’ degerini dondurur. 
 ’fiyatver’ methodu bir tamsayı ve bir dize parametresi alır.
 Baglantı dizesini kullanarak bir SQL veritabanına baglanır, 
 bir baglantı acar ve ’alanTur’ parametresinin degerine gore 
 ’magaza’ veya ’market’ tablosundan verisecmek icin bir SQL
 komutu calıstırır. Komut, ’magazaharita’ veya ’marketharita’
-alanının degeri ’singleton.haritaID’ de ˘ gis¸keninin de ˘ gerine es¸it ˘
-ve ’magazano’ veya ’marketno’ alanının degeri sa ˘ glanan ˘
-’alanNo’ parametresine es¸it olan tum verileri sec¸er. ¨
-Tabloda es¸les¸en bir kayıt bulunursa, yontem kayıttan ’mag- ¨
-azaucret’ veya ’market ¨ ucret’ alanının de ¨ gerini alır, bir diz- ˘
-eye don¨ us¸t ¨ ur¨ ur ve ’returnValue’ adlı bir de ¨ gis¸kene atar. Son ˘
-olarak, veritabanı baglantısını kapatır ve ’returnValue’ de ˘ gerini ˘
-dond ¨ ur¨ ur. ¨
-Yani bu method, saglanan ’alanNo’ parametresine ve ˘
-’alanTur’ parametresine ba ¨ glı olarak bir SQL veritabanı ˘
-tablosundan fiyat degerini alır. ’y ˘ oneticibilgiver’ methodu ¨
+alanının degeri ’singleton.haritaID’ degis¸keninin degerine esit 
+ve ’magazano’ veya ’marketno’ alanının degeri saglanan 
+’alanNo’ parametresine esit olan tum verileri secer. 
+Tabloda eslesen bir kayıt bulunursa, yontem kayıttan ’mag- 
+azaucret’ veya ’market ¨ ucretalanının degerini alır, bir diz- 
+eyedonusturur ve ’returnValue’ adlı bir degiskene atar. Son 
+olarak, veritabanı baglantısını kapatır ve ’returnValue’ degerini 
+dondurur. ¨
+
+Yani bu method, saglanan ’alanNo’ parametresine ve
+’alanTur’ parametresine baglı olarak bir SQL veritabanı ˘
+tablosundan fiyat degerini alır. ’yoneticibilgiver’ methodu 
 ’talepbilgi’ adlı bir dize parametresi alır ve kullanıcının
-’esyamiktarı’ veya ’yemekmiktarı’ degerlerini d ˘ ond ¨ ur¨ ur. ¨
-Baglantı dizesini kullanarak bir SQL veritabanına ba ˘ glanır ˘
-ve ’kullanıcıinfo’ tablosundan ’kullanıcıadı’ alanı ’singleton.oyuncuAd’ degis¸keninin de ˘ gerine es¸it olan verileri sec¸mek ˘
-ic¸in bir SQL komutu c¸alıs¸tırır.
-Eger ’talepbilgi’ de ˘ geri ’esya’ ise, SQL komutu ’esyamik- ˘
-tarı’ alanının degerini sec¸er; e ˘ ger ’talepbilgi’ de ˘ geri ’yemek’ ˘
-ise, SQL komutu ’yemekmiktarı’ alanının degerini sec¸er. ˘
+’esyamiktarı’ veya ’yemekmiktarı’ degerlerini donndurur. 
+Baglantı dizesini kullanarak bir SQL veritabanına baglanır 
+ve ’kullanıcıinfo’ tablosundan ’kullanıcıadı’ alanı ’singleton.oyuncuAd’ degiskeninin degerine esit olan verileri secmek 
+icin bir SQL komutu calıstırır.
+Eger ’talepbilgi’ degeri ’esya’ ise, SQL komutu ’esyamik- 
+tarı alanının degerini secer; eger ’talepbilgi’ degeri ’yemek’ 
+ise, SQL komutu ’yemekmiktarı’ alanının degerini secer. 
 Daha sonra, SQLDataReader nesnesi ile kayıtlar okunur ve
-bulunan kayıtlarda ’esyamiktarı’ veya ’yemekmiktarı’ degeri ˘
-’returnValue’ degis¸kenine atanır. Bu de ˘ ger son olarak bir ˘
-tamsayıya don¨ us¸t ¨ ur¨ ul¨ ur ve ’returnValue’ olarak d ¨ ond ¨ ur¨ ul¨ ur. ¨
-Son olarak, veritabanı baglantısı kapatılır. ˘
-Bu method, kullanıcının es¸ya veya yemek miktarını
-dond ¨ ur¨ ur ve bu bilgilerin di ¨ ger is¸lemlerde kullanılması ic¸in ˘
+bulunan kayıtlarda ’esyamiktarı’ veya ’yemekmiktarı’ degeri 
+’returnValue’ degiskenine atanır. Bu deger son olarak bir 
+tamsayıya donusturulur ve ’returnValue’ olarak dondurulur. 
+Son olarak, veritabanı baglantısı kapatılır. 
+Bu method, kullanıcının esya veya yemek miktarını
+dondurur ve bu bilgilerin diger islemlerde kullanılması icin 
 kullanılabilir.
-”yoneticiParaAzalt()” methodu, ¨ oncelikle bir SqlConnec- ¨
-tion objesi olus¸turur ve baglantı dizesini kullanarak bir SQL ˘
-veritabanına baglanır. Daha sonra, ”y ˘ oneticiParaBul()” adlı ¨
-bas¸ka bir method kullanarak yoneticinin parasını bulur ve bir ¨
-degis¸kene atar. Ardından, kullanıcının sec¸ti ˘ gi˘ ur¨ un adetini ve ¨
+
+”yoneticiParaAzalt()” methodu,  oncelikle bir SqlConnec- 
+tion objesi olusturur ve baglantı dizesini kullanarak bir SQL 
+veritabanına baglanır. Daha sonra, ”yoneticiParaBul()” adlı  
+baska bir method kullanarak yoneticinin parasını bulur ve bir
+degiskene atar. Ardından, kullanıcının sectigi urun adetini ve 
 fiyatını kullanarak hesaplayarak, kullanıcının parasını azaltır
 ve veritabanına kaydeder.
-”yoneticiParaBul()” methodu ise, bir tamsayı de ¨ geri ˘
-dond ¨ ur¨ ur ve bir SqlConnection objesi olus¸turur. Daha sonra, ¨
-baglantı dizesini kullanarak bir SQL veritabanına ba ˘ glanır ve ˘
-bir SQL komutu c¸alıs¸tırarak yoneticinin parasını bulur. Bu ¨
-degeri bir de ˘ gis¸kene atar, veritabanı ba ˘ glantısını kapatır ve ˘
-degis¸keni d ˘ ond ¨ ur¨ ur. ¨
-Bu iki method birlikte c¸alıs¸arak, kullanıcının ur¨ un satın ¨
-alma is¸lemleri sırasında, yoneticinin parasını azaltmaktadır. Bu ¨
-sayede, kullanıcıların alıs¸veris¸ yaparken yeterli miktarda para
-olup olmadıgını kontrol etmek ic¸in bu method kullanılabilir. ˘
-Yoneticinin parasını azaltmak ic¸in kullanılan bu method, ¨
-diger is¸lemler ic¸in de kullanılabilir. ˘ Orne ¨ gin, y ˘ oneticinin para ¨
-miktarını kontrol etmek ic¸in ”yoneticiParaBul()” methodu kul- ¨
-lanılabilir. Bu sayede, yoneticinin para miktarı de ¨ gis¸ti ˘ ginde, ˘
-diger is¸lemlerde bu de ˘ gis¸iklikten yararlanılabilir. ˘
-Overall, bu method, kullanıcının ur¨ un satın alma is¸lemleri ¨
-sırasında yoneticinin parasını azaltmak ic¸in kullanılabilir ¨
-ve yoneticinin para miktarını kontrol etmek ic¸in de di ¨ ger ˘
-is¸lemlerde kullanılabilir. Bu sayede, daha iyi bir alıs¸veris¸
-deneyimi saglanabilir ve is¸lemler daha akıcı hale getirilebilir. ˘
-’sahiparaartır’ methodu bir kullanıcının veya yoneticinin ¨
-parasını artırmak ic¸in tasarlanmıs¸tır. Method, ”sahipBul()” adlı
-bir method kullanarak oncelikle kullanıcının veya y ¨ oneticinin ¨
-kimligini belirler ve bir de ˘ gis¸kene atar. Daha sonra, kul- ˘
-lanıcının sec¸tigi˘ ur¨ un adetini ve fiyatını kullanarak hesapla- ¨
+
+”yoneticiParaBul()” methodu ise, bir tamsayı degeri 
+dondurur ve bir SqlConnection objesi olusturur. Daha sonra, 
+baglantı dizesini kullanarak bir SQL veritabanına baglanır ve 
+bir SQL komutu calıstırarak yoneticinin parasını bulur. Bu 
+degeri bir degiskene atar, veritabanı baglantısını kapatır ve 
+degiskeni dondurur. 
+
+Bu iki method birlikte calısarak, kullanıcının urun satın 
+alma islemleri sırasında, yoneticinin parasını azaltmaktadır. Bu 
+sayede, kullanıcıların alısveris¸ yaparken yeterli miktarda para
+olup olmadıgını kontrol etmek icin bu method kullanılabilir. 
+Yoneticinin parasını azaltmak icin kullanılan bu method, 
+diger islemler icin de kullanılabilir.  Ornegin, yoneticinin para 
+miktarını kontrol etmek icin ”yoneticiParaBul()” methodu kul- 
+lanılabilir. Bu sayede, yoneticinin para miktarı degistiginde, 
+diger islemlerde bu degisiklikten yararlanılabilir. 
+
+Overall, bu method, kullanıcının urun satın alma islemleri 
+sırasında yoneticinin parasını azaltmak icin kullanılabilir 
+ve yoneticinin para miktarını kontrol etmek icin de diger 
+islemlerde kullanılabilir. Bu sayede, daha iyi bir alısveris¸
+deneyimi saglanabilir ve islemler daha akıcı hale getirilebilir. 
+’sahiparaartır’ methodu bir kullanıcının veya yoneticinin 
+parasını artırmak icin tasarlanmıstır. Method, ”sahipBul()” adlı
+bir method kullanarak oncelikle kullanıcının veya yoneticinin 
+kimligini belirler ve bir degiskene atar. Daha sonra, kul- 
+lanıcının sectigi˘ urun adetini ve fiyatını kullanarak hesapla- 
 yarak, kullanıcının parasını arttırır ve veritabanına kaydeder.
-Bu method, kullanıcının veya yoneticinin parasını arttırmak ¨
-ic¸in kullanılabilir ve bu bilgilerin diger is¸lemlerde kullanılması ˘
-ic¸in kullanılabilir. Yonetici veya kullanıcı kimli ¨ gine ba ˘ glı ˘
-olarak, ”yoneticiinfo” veya ”kullanıcıinfo” tablolarından il- ¨
-gili alanlar sec¸ilir ve kullanıcının parası ”paramiktarı” veya
-”yoneticipara” alanına kaydedilir. ¨
-Overall, bu method, kullanıcının veya yoneticinin parasını ¨
-arttırmak ic¸in kullanılabilir ve diger is¸lemlerde kullanılabilir. ˘
-Bu sayede, daha iyi bir alıs¸veris¸ deneyimi saglanabilir ve ˘
-is¸lemler daha akıcı hale getirilebilir.
+Bu method, kullanıcının veya yoneticinin parasını arttırmak 
+icin kullanılabilir ve bu bilgilerin diger islemlerde kullanılması 
+icin kullanılabilir. Yonetici veya kullanıcı kimligine baglı 
+olarak, ”yoneticiinfo” veya ”kullanıcıinfo” tablolarından il- 
+gili alanlar secilir ve kullanıcının parası ”paramiktarı” veya
+”yoneticipara” alanına kaydedilir. 
+
+Overall, bu method, kullanıcının veya yoneticinin parasını 
+arttırmak icin kullanılabilir ve diger islemlerde kullanılabilir. 
+Bu sayede, daha iyi bir alısveris deneyimi saglanabilir ve 
+islemler daha akıcı hale getirilebilir.
 ’kullanıcıparabul’ methodu, veritabanında kullanıcı adı
-’alanSahip.Text’ olan kullanıcının para miktarını dond ¨ ur¨ ur. ¨
-Veritabanına baglanarak, ’kullanıcıinfo’ tablosundan kul- ˘
-lanıcının para miktarını sec¸er ve bir degis¸kene atar. Bu ˘
-degis¸ken son olarak bir tamsayıya d ˘ on¨ us¸t ¨ ur¨ ul¨ ur ve ’return- ¨
-Value’ olarak dond ¨ ur¨ ul¨ ur. ¨
-Bu method, kullanıcının para miktarını kontrol etmek ic¸in
-kullanılabilir ve diger is¸lemlerde de kullanılabilir. ˘ Orne ¨ gin, ˘
-kullanıcının para miktarına baglı olarak, kullanıcının ala- ˘
-bilecegi˘ ur¨ unlerin sayısı kontrol edilebilir. Bu sayede, daha ¨
-iyi bir alıs¸veris¸ deneyimi saglanabilir ve is¸lemler daha akıcı ˘
+’alanSahip.Text’ olan kullanıcının para miktarını dondurur. 
+Veritabanına baglanarak, ’kullanıcıinfo’ tablosundan kul- 
+lanıcının para miktarını secer ve bir degiskene atar. Bu
+degisken son olarak bir tamsayıya donusturulur ve ’return- 
+Value’ olarak dondurulur. 
+Bu method, kullanıcının para miktarını kontrol etmek icin
+kullanılabilir ve diger islemlerde de kullanılabilir. ˘ Ornegin, 
+kullanıcının para miktarına baglı olarak, kullanıcının ala- 
+bilecegi urunlerin sayısı kontrol edilebilir. Bu sayede, daha 
+iyi bir alısveris deneyimi saglanabilir ve islemler daha akıcı 
 hale getirilebilir.
-‘sahipBul()‘ methodu, veritabanında yonetici adı ¨
-’alanSahip.Text’ olan yoneticinin veya kullanıcının kimli ¨ gini ˘
-belirler ve bir dize olarak dond ¨ ur¨ ur. Ba ¨ glantı dizesini ˘
-kullanarak bir SQL veritabanına baglanır ve ’y ˘ oneticiinfo’ ¨
-tablosundan ’yoneticiad’ alanı sa ¨ glanan ’alanSahip.Text’ ˘
-degerine es¸it olan verileri sec¸mek ic¸in bir SQL komutu ˘
-c¸alıs¸tırır. ’COUNT(*)’ fonksiyonu kullanılarak kayıtlar sayılır
-ve sayı degeri bir de ˘ gis¸kene atanır. E ˘ ger kayıt sayısı 0’dan ˘
-buy¨ ukse, y ¨ onetici kimli ¨ gi belirlenir ve ’y ˘ onetici’ dizesi ¨
-dond ¨ ur¨ ul¨ ur; aksi takdirde, kullanıcı kimli ¨ gi belirlenir ve ˘
-’kullanıcı’ dizesi dond ¨ ur¨ ul¨ ur. ¨
-Bu method, kullanıcının veya yoneticinin kimli ¨ gini belir- ˘
-lemek ic¸in kullanılabilir ve diger is¸lemlerde de kullanılabilir. ˘
-Orne ¨ gin, y ˘ onetici veya kullanıcı kimli ¨ gine ba ˘ glı olarak, ˘
-yonetici veya kullanıcı ¨ ozelliklerine eris¸im kontrol edilebilir. ¨
-Bu sayede, daha iyi bir kullanıcı deneyimi saglanabilir ve ˘
-is¸lemler daha akıcı hale getirilebilir.
-’ur¨ unalclick’ methodu, kullanıcının ¨ ur¨ un satın alma ¨
-is¸lemlerindeki temel is¸levleri gerc¸ekles¸tirir. Oncelikle, kul- ¨
-lanıcının sec¸tigi˘ ur¨ un t ¨ ur¨ une (ma ¨ gaza ya da market) ve adetine ˘
-gore, kullanıcının parasını azaltır ve ¨ ur¨ un miktarını artırır. ¨
-Bu is¸lem, oncelikle ‘y ¨ oneticiBilgiVer()‘ methodunu kul- ¨
-lanarak, kullanıcının sec¸tigi˘ ur¨ un¨ un fiyatını ve t ¨ ur¨ un¨ u¨
-belirler. Daha sonra, kullanıcının parasını azaltmak ic¸in
-‘yoneticiParaAzalt()‘ methodunu c¸a ¨ gırır ve kullanıcının ˘
-parasını gunceller. ¨
-Ardından, kullanıcının sec¸tigi˘ ur¨ un miktarını ‘ ¨ ur¨ unAdet‘ ¨
+
+‘sahipBul()‘ methodu, veritabanında yonetici adı 
+’alanSahip.Text’ olan yoneticinin veya kullanıcının kimligini 
+belirler ve bir dize olarak dondurur. Baglantı dizesini 
+kullanarak bir SQL veritabanına baglanır ve ’yoneticiinfo’ 
+tablosundan ’yoneticiad’ alanı saglanan ’alanSahip.Text’ 
+degerine esit olan verileri secmek icin bir SQL komutu 
+calıstırır. ’COUNT(*)’ fonksiyonu kullanılarak kayıtlar sayılır
+ve sayı degeri bir degiskene atanır. Eger kayıt sayısı 0’dan 
+buyukse, yonetici kimligi belirlenir ve ’yonetici’ dizesi 
+dondurulur; aksi takdirde, kullanıcı kimligi belirlenir ve 
+’kullanıcı’ dizesi dondurulur. 
+
+Bu method, kullanıcının veya yoneticinin kimligini belir- 
+lemek icin kullanılabilir ve diger islemlerde de kullanılabilir. 
+Ornegin, yonetici veya kullanıcı kimligine baglı olarak, 
+yonetici veya kullanıcı  ozelliklerine erisim kontrol edilebilir. 
+Bu sayede, daha iyi bir kullanıcı deneyimi saglanabilir ve 
+islemler daha akıcı hale getirilebilir.
+’ur¨ unalclick’ methodu, kullanıcının ¨ ur¨ un satın alma 
+islemlerindeki temel islevleri gerceklestirir. Oncelikle, kul- 
+lanıcının sectigiurun turune (magaza ya da market) ve adetine 
+gore, kullanıcının parasını azaltır ve urun miktarını artırır. 
+Bu islem, oncelikle ‘yoneticiBilgiVer()‘ methodunu kul- 
+lanarak, kullanıcının sectigi urunun fiyatını ve turunu
+belirler. Daha sonra, kullanıcının parasını azaltmak icin
+‘yoneticiParaAzalt()‘ methodunu cagırır ve kullanıcının 
+parasını gunceller. 
+Ardından, kullanıcının sectigiurun miktarını ‘ urunAdet‘ 
 parametresinde belirleyerek, ‘kullanıcıinfo‘ tablosundaki
-‘esyamiktarı‘ veya ‘yemekmiktarı‘ alanını gunceller. Bu ¨
-is¸lem, ‘Update‘ SQL komutunu kullanarak gerc¸ekles¸tirilir.
-Son olarak, kullanıcının parasını artırmak ic¸in ‘sahipParaArtır()‘ methodunu c¸agırır ve is¸lemin bas¸arılı oldu ˘ gunu ˘
-belirten bir mesaj kutusu gor¨ unt ¨ uler. ¨
-Bu method, kullanıcının ur¨ un satın alma is¸lemlerini ¨
-gerc¸ekles¸tirmesini saglayarak, alıs¸veris¸ deneyimini daha iyi ˘
-hale getirir ve is¸lemleri daha akıcı hale getirir. Ayrıca,
-yoneticinin parasını kontrol etmek ic¸in ‘y ¨ oneticiParaBul()‘ ¨
-methodu ve kullanıcının para miktarını kontrol etmek ic¸in
-‘kullanıcıParaKontrol()‘ methodu gibi diger methodlarla bir- ˘
+‘esyamiktarı‘ veya ‘yemekmiktarı‘ alanını gunceller. Bu 
+islem, ‘Update‘ SQL komutunu kullanarak gerceklestirilir.
+Son olarak, kullanıcının parasını artırmak icin ‘sahipParaArtır()‘ methodunu cagırır ve islemin basarılı oldugunu 
+belirten bir mesaj kutusu goruntuler. 
+Bu method, kullanıcının urun satın alma islemlerini 
+gerceklestirmesini saglayarak, alısveris¸ deneyimini daha iyi 
+hale getirir ve islemleri daha akıcı hale getirir. Ayrıca,
+yoneticinin parasını kontrol etmek icin ‘yoneticiParaBul()‘ 
+methodu ve kullanıcının para miktarını kontrol etmek icin
+‘kullanıcıParaKontrol()‘ methodu gibi diger methodlarla bir- 
 likte kullanılabilir.
-Overall, bu method, bir alıs¸veris¸ is¸lemi sırasında gereken
-temel is¸levleri yerine getirerek, kullanıcıların daha iyi bir
-alıs¸veris¸ deneyimi yas¸amasını saglar ve is¸lemlerin daha hızlı ˘
-ve akıcı bir s¸ekilde gerc¸ekles¸tirilmesini saglar. ˘
-’isbasvuruonaylaclick’ methodu, bir is¸ bas¸vurusu bilgisi
-olus¸turmak ic¸in kullanılır. ˙Is¸ bas¸vuruları, ”basvuruinfo” adlı
-bir tabloda saklanır ve bu method, saglanan parametreleri ˘
-kullanarak yeni bir is¸ bas¸vurusu kaydı olus¸turur.
-Oncelikle, SqlConnection nesnesi olus¸turulur ve ba ¨ glantı ˘
-dizesi kullanılarak bir SQL veritabanına baglanılır. Daha ˘
-sonra, ”basvuruinfo” tablosuna yeni bir kayıt eklemek ic¸in bir
-SQL INSERT komutu c¸alıs¸tırılır.
-Komut, saglanan parametreleri kullanarak, ”basvuruno”, ˘
+
+Overall, bu method, bir alısveris¸ islemi sırasında gereken
+temel islevleri yerine getirerek, kullanıcıların daha iyi bir
+alısveris¸ deneyimi yasamasını saglar ve islemlerin daha hızlı 
+ve akıcı bir sekilde gerceklestirilmesini saglar. 
+’isbasvuruonaylaclick’ methodu, bir is bas¸vurusu bilgisi
+olusturmak icin kullanılır. ˙Is basvuruları, ”basvuruinfo” adlı
+bir tabloda saklanır ve bu method, saglanan parametreleri 
+kullanarak yeni bir is basvurusu kaydı olusturur.
+Oncelikle, SqlConnection nesnesi olusturulur ve baglantı 
+dizesi kullanılarak bir SQL veritabanına baglanılır. Daha 
+sonra, ”basvuruinfo” tablosuna yeni bir kayıt eklemek icin bir
+SQL INSERT komutu calıstırılır.
+
+Komut, saglanan parametreleri kullanarak, ”basvuruno”, 
 ”basvuruisim”, ”basvurusaat”, ”basvuruucret”,
 ”basvurualansahip”, ”basvurualanno” ve ”basvurualanharita”
 alanlarını doldurur.
 Son olarak, SqlCommand nesnesi kullanılarak komut
-c¸alıs¸tırılır ve is¸lem bas¸arılı oldugunda bir mesaj kutusu ˘
-gor¨ unt ¨ ulenir. ¨
-Bu method, yeni bir is¸ bas¸vurusu kaydı olus¸turmak ic¸in kullanılır. ˙Is¸ bas¸vuruları, ”basvuruinfo” adlı bir tabloda saklanır
-ve bu method, saglanan parametreleri kullanarak yeni bir is¸ ˘
-bas¸vurusu kaydı olus¸turur.
+calıstırılır ve islem basarılı oldugunda bir mesaj kutusu 
+goruntulenir. 
+
+Bu method, yeni bir isbasvurusu kaydı olusturmak icin kullanılır. ˙Isbas¸vuruları, ”basvuruinfo” adlı bir tabloda saklanır
+ve bu method, saglanan parametreleri kullanarak yeni bir is
+basvurusu kaydı olusturur.
+
 E. UML diyagramı :
+
 F. ER diyagramı :
+
 REFERENCES
 [1] https://www.youtube.com/watch?v=2EkMrrX9sYY&t=8038s
 [2] https://www.youtube.com/watch?v=L86eqtdC2as&t=3633s
