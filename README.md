@@ -1,98 +1,97 @@
 # MetaLand-Simulation-Game
 
 I. AC¸IKLAMA
-Kocaeli Universitesi Bilgisayar M ¨ uhendisli ¨ gi Programlama ˘
+Kocaeli Universitesi Bilgisayar Muhendisligi Programlama 
 Labaratuvarı 2 3.proje hakkında rapor yazısı.
-II. O¨ ZET
-A. Proje Ac¸ıklaması
-Kullanıcıların emlak alabildigi is¸ kurabildi ˘ gi c¸alıs¸abildi ˘ gi, ˘
-kendi ic¸inde ekonomik bir sistemi olan bazı kurallara dayalı
-metaland oyunu.Oyuncular belirtilen bolge ic¸indeki bos¸ arazi- ¨
-leri satın alabilir,buradaki menkullerin tipini degis¸ebilir bu- ˘
-radan ilan ac¸abilir,bu ilan uzerinden kullanıcıları is¸e alabilir ¨
-belirli bir gelir kars¸ılıgında belirli bir s ˘ ure c¸alıs¸tırabilir.Ayrıca ¨
-menkul satabilir veya satın alabilir.Haritanın bir de yoneticisi ¨
-vardır.Yonetici istedi ¨ gi boyutta harita olus¸turabilir, bu harita ˘
-uzerinde bir c¸ok yetkiye sahiptir kullanıcıların yemek es¸ya ¨
-ve paralarını manipule edebilir.Ayrıca kullanıcıların yemek, ¨
-es¸ya ve paraları biterse oyunu kaybederler ve bir daha eris¸im
-saglayamazlar. ˘
-B. Gelis¸tirme Sureci ¨
-Oncellikle bizden istenen metaland sim ¨ ulasyonu oyunu ic¸in ¨
-c kullandık.C kullanmamızdaki temel etken bizden istenenleri
-rahatlıkla kars¸ılaması, windows form uygulaması kullanımının
-visual studio uzerinden kullanılmasının kolay olması ve daha ¨
-oncesinde c diline as¸ina olmamız oldu.Ayrıca bizden istenen ¨
-veri tabanı is¸lemleri ic¸in mssql server kullandık, mssql kullanımızdaki temel etkense hem daha oncesinde kullanımına ¨
-as¸ina olmamız hem de mssqlin arayuz ve kullanımının bize ¨
-sunulan diger sec¸enekler olan mysql ve postgresql’den daha ˘
+II. OZET
+A. Proje Acıklaması
+Kullanıcıların emlak alabildigi is kurabildigi calısabildi gi,
+kendi icinde ekonomik bir sistemi olan bazı kurallara dayalı
+metaland oyunu.Oyuncular belirtilen bolge icindeki bos arazi
+leri satın alabilir,buradaki menkullerin tipini degisebilir bu
+radan ilan acabilir,bu ilan uzerinden kullanıcıları ise alabilir
+belirli bir gelir karsılıgında belirli bir sure calıstırabilir.Ayrıca
+menkul satabilir veya satın alabilir.Haritanın bir de yoneticisi
+vardır.Yonetici istedigi boyutta harita olusturabilir, bu harita
+uzerinde bir cok yetkiye sahiptir kullanıcıların yemek esya 
+ve paralarını manipule edebilir.Ayrıca kullanıcıların yemek, 
+esya ve paraları biterse oyunu kaybederler ve bir daha eris¸m
+saglayamazlar. 
+B. Gelistirme Sureci 
+Oncellikle bizden istenen metaland simulasyonu oyunu icin 
+c kullandıkC kullanmamızdaki temel etken bizden istenenleri
+rahatlıkla karsılaması, windows form uygulaması kullanımının
+visual studio uzerinden kullanılmasının kolay olması ve daha 
+oncesinde c diline asina olmamız oldu.Ayrıca bizden istenen
+veri tabanı islemleri icin mssql server kullandık, mssql kullanımızdaki temel etkense hem daha oncesinde kullanımına 
+asina olmamız hem de mssqlin arayuz ve kullanımının bize 
+sunulan diger secenekler olan mysql ve postgresql’den daha 
 kolay olması oldu.
-Tasarladıgımız Metaland platformunda bulunan kullanıcılar ˘
-ic¸in tasarlanacak olan veritabanı, varlıklar ve is¸lemlerle ilgili bilgilerin duzenli bir s¸ekilde y ¨ onetilmesine yardımcı ola- ¨
+Tasarladıgımız Metaland platformunda bulunan kullanıcılar 
+icin tasarlanacak olan veritabanı, varlıklar ve islemlerle ilgili bilgilerin duzenli bir sekilde yonetilmesine yardımcı ola- 
 caktır. Bu sayede kullanıcılar, ihtiyac¸ duydukları bilgilere
-daha kolay bir s¸ekilde ulas¸abileceklerdir.Veritabanı tabloları
-olus¸turulurken bizden istendigi s¸ekilde 3nf normalizasyonuna ˘
+daha kolay bir sekilde ulasabileceklerdir.Veritabanı tabloları
+olusturulurken bizden istendigi sekilde 3nf normalizasyonuna ˘
 uygun olmasına dikkat ettik.
-Olus¸turdugumuz windows form uygulamasında tek bir ˘
-form uzerinden t ¨ um is¸lemleri kontrol etmek ic¸in Usercontrol ¨
-sınıflarıyla c¸alıs¸tık . Usercontrol sınıfı form classı uzerine tetk- ¨
-lenen ve uzerinde yeniden kullanılmasına olanak sa ¨ glayacak ˘
-s¸ekilde form1 classı uzerine gerekli durumlar olus¸tu ¨ gunda ˘
-c¸agırılmaktadır.Bu controller hem kod yazımını daha d ˘ uzenli ¨
-ve verimli hale getirmektedir hem de kullanıcı ic¸in daha
-duzenli bir aray ¨ uz sunmaktadır. ¨
-Projede olus¸turdugumuz ER diyagramı mssql’in ˘
-bize sundugu veritabanı diagramı g ˘ or¨ unt ¨ uleme ¨ ozelli ¨ gi˘
+Olusturdugumuz windows form uygulamasında tek bir 
+form uzerinden tum islemleri kontrol etmek icin Usercontrol 
+sınıflarıyla calıstık . Usercontrol sınıfı form classı uzerine teti
+lenen ve uzerinde yeniden kullanılmasına olanak saglayacak 
+sekilde form1 classı uzerine gerekli durumlar olustugunda
+cagırılmaktadır.Bu controller hem kod yazımını daha duzenli
+ve verimli hale getirmektedir hem de kullanıcı icin daha
+duzenli bir arayuz sunmaktadır. 
+Projede olusturdugumuz ER diyagramı mssql’in 
+bize sundugu veritabanı diagramı goruntuleme ozelligi
 kullanarak elde edilmis¸tir. Aynı zamanda bizden
-istenen UML diyagramı ic¸inse c gelis¸tirmek ic¸in
-kullandıgımız ortam olan visual studio’nun sınıf ˘
-gor¨ unt ¨ uleyicisi ¨ ozelli ¨ gine bas¸vurulmus¸tur. [htbp] ˘
+istenen UML diyagramı icinse c gelis¸irmek icin
+kullandıgımız ortam olan visual studio’nun sınıf 
+goruntuleyicisi  ozelli  ginebas¸vurulmustur. [htbp] ˘
 III. YONTEM ¨
 A. Giris¸
-Giris¸ ekranında giris¸ yapan kis¸iden yonetici giris¸i mi ¨
-kullanıcı giris¸i mi yapmak istedgine g ˘ ore sec¸tirilir.Veya ¨
-kayıt olma ekranına gidilir.Yaptıgı sec¸ene ˘ ge g ˘ ore ekran- ¨
-lara yonlendirilir.y ¨ onlendirilen ekranda isim ve s¸ifre is- ¨
-tenir.Ardından bu degerler kontrol edilir e ˘ ger oyuncu veya ˘
-yonetici tabloları kontrol edilir e ¨ ger kullanıcı varsa giris¸ yapılır ˘
-yoksa is¸lem bas¸arısız olur.Ayrıca burada oyuncunun kaynakları
-kontrol edilir eger t ˘ ukenmis¸se giris¸ yapmasına izin verilmez. ¨
+Giris¸ ekranında giris¸ yapan kisiden yonetici girisi mi 
+kullanıcı girisi mi yapmak istedgine gore sectirilir.Veya 
+kayıt olma ekranına gidilir.Yaptıgı secenege gore ekran- 
+lara yonlendirilir yonlendirilen ekranda isim ve sifre is-
+tenir.Ardından bu degerler kontrol edilir  eger oyuncu veya ˘,
+yonetici tabloları kontrol edilir eger kullanıcı varsa giris¸ yapılır ˘
+yoksa islem basarısız olur.Ayrıca burada oyuncunun kaynakları
+kontrol edilir eger tukenmisse giris¸ yapmasına izin verilmez. 
 B. Kayıt Olma
 Kayıt olma ekranında kullanıcıdan bilgiler alınır.Ardından
 metaLand adlı Db de kullanıcı tablosuna kaydedilir.Ve kul-
-lanıcıya kayıt olus¸turuldu bilgisi verilir.
+lanıcıya kayıt olusturuldu bilgisi verilir.
 C. kullanıcı panel
-Burada yoneticiye harita id sorulur.Ve Sec¸ilen harita ¨
-ekrana verilir.Kontrol ekranında yonetici harita numarasını ¨
-ve boyutunu girerek harita olus¸turabilir.Haritaya kayıtlı
-olanları sorgular ve gun sonunu verir.Oyuncu panelinden ¨
+Burada yoneticiye harita id sorulur.Ve Secilen harita 
+ekrana verilir.Kontrol ekranında yonetici harita numarasını 
+ve boyutunu girerek harita olusturabilir.Haritaya kayıtlı
+olanları sorgular ve gun sonunu verir.Oyuncu panelinden 
 farkı kontrol kısmıdır.Menkullerim kısmında kullanıcıya
 ait menkuller bilgileriyle birlikte verilir.Ve bu ekranda
-kis¸i menkul sec¸ip satabilir.Ayrıca burada menkul ins¸a
-edilebilir.Varlıklar kısmında kis¸inin yemek para ve
-es¸ya miktarı gosterilir. ¨
-˙Is¸ talebi kısmında is¸ ilanları
-gor¨ unt ¨ ulenebilir uygunsa kabul edilebilir de ¨ gilse pazarlık ˘
+kisi menkul secip satabilir.Ayrıca burada menkul insa
+edilebilir.Varlıklar kısmında kisinin yemek para ve
+esya miktarı gosterilir. 
+Is¸ talebi kısmında isilanları
+gorunt  ulenebilir uygunsa kabul edilebilir degilse pazarlık
 yapılabilir.Pazar kısmında satılıktaki menkuller satın alınabilir.
 D. harita-oyun
-Harita uzerinde gezinme yapılabili, be ¨ genilen ya da sec¸ilen ˘
-yerlerin satın alımı yapılabilir is bas¸vurusunda bulunulabilir.
-’turVer’ adlı y ¨ ontem, ’alanNo’ adlı bir tamsayı parametresi ¨
-alır. Saglanan ba ˘ glantı dizesini kullanarak bir SQL verita- ˘
-banına baglanır, bir ba ˘ glantı ac¸ar ve ’alaninfo’ adlı bir tablodan ˘
-veri sec¸mek ic¸in bir SQL komutu c¸alıs¸tırır. Komut, ’alanharita’
-alanının degeri ’singleton.haritaID’ de ˘ gis¸keninin de ˘ gerine es¸it ˘
-ve ’alanno’ alanının degeri sa ˘ glanan ’alanNo’ parametresine ˘
-es¸it olan tum verileri sec¸er. ¨
-Tabloda es¸les¸en bir kayıt bulunursa, yontem kayıttan ¨
-’alantur¨ u’ alanının de ¨ gerini alır, bir dizeye d ˘ on¨ us¸t ¨ ur¨ ur ve ¨
-’returnValue’ adlı bir degis¸kene atar. Son olarak, veritabanı ˘
-baglantısını kapatır ve ’returnValue’ de ˘ gerini d ˘ ond ¨ ur¨ ur. ¨
+Harita uzerinde gezinme yapılabili, begenilen ya da secilen bir.
+’turVer’ adlı yontem, ’alanNo’ adlı bir tamsayı parametresi ¨
+alır. Saglanan baglantı dizesini kullanarak bir SQL verita- ˘
+banına baglanır, bir baglantı acar ve ’alaninfo’ adlı bir tablodan ˘
+veri secmek icin bir SQL komutu calıstırır. Komut, ’alanharita’
+alanının degeri ’singleton.haritaID’ de ˘ giskeninin de ˘ gerieit ˘
+ve ’alanno’ alanının degeri saglanan ’alanNo’ parametresine ˘
+esit olan tum verileri secer. ¨
+Tabloda eslesen bir kayıt bulunursa, yontem kayıttan ¨
+’alantur¨ u’ alanının degerini alır, bir dizeye donustuur ve 
+’returnValue’ adlı bir degiskene atar. Son olarak, veritabanı ˘
+baglantısını kapatır ve ’returnValue’ degerini dondurur. 
 ’fiyatver’ methodu bir tamsayı ve bir dize parametresi alır.
-Baglantı dizesini kullanarak bir SQL veritabanına ba ˘ glanır, ˘
-bir baglantı ac¸ar ve ’alanT ˘ ur’ parametresinin de ¨ gerine g ˘ ore ¨
-’magaza’ veya ’market’ tablosundan veri sec¸mek ic¸in bir SQL
-komutu c¸alıs¸tırır. Komut, ’magazaharita’ veya ’marketharita’
+Baglantı dizesini kullanarak bir SQL veritabanına baglanır, 
+bir baglantı acar ve ’alanTur’ parametresinin degerine gore 
+’magaza’ veya ’market’ tablosundan verisecmek icin bir SQL
+komutu calıstırır. Komut, ’magazaharita’ veya ’marketharita’
 alanının degeri ’singleton.haritaID’ de ˘ gis¸keninin de ˘ gerine es¸it ˘
 ve ’magazano’ veya ’marketno’ alanının degeri sa ˘ glanan ˘
 ’alanNo’ parametresine es¸it olan tum verileri sec¸er. ¨
