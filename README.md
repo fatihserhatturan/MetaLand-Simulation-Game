@@ -268,23 +268,40 @@ F. ER diyagramı :
 
 REFERENCES
 [1] https://www.youtube.com/watch?v=2EkMrrX9sYY&t=8038s
+
 [2] https://www.youtube.com/watch?v=L86eqtdC2as&t=3633s
+
 [3] https://learnsql.com/blog/sql-basics-cheat-sheet/
+
 [4] https://www.youtube.com/watch?v=q F4PyW8GTg
+
 [5] https://dotnet.microsoft.com/en-us/learn/csharp
+
 [6] https://learn.microsoft.com/en-us/dotnet/csharp/
+
 [7] https://www.youtube.com/watch?v=UMc1HLyBHSQ
+
 [8] https://www.youtube.com/watch?v=PzP8mw7JUzI
+
 [9] https://www.youtube.com/watch?v=qLNLWw82NeE&list=
 PLyQXlWxYAh8-TkeUrN8viS8K69lNK1pDn
+
 [10] https://www.youtube.com/watch?v=oSeYvMEH7jc
+
 [11] https://www.youtube.com/watch?v=QXQN8NkINfw&list=
 PLAeYh-ds6kE-VvUUziIn7 pPnwUxcsteF
+
 [12] https://www.youtube.com/watch?v=vYDyGxoq9JU
+
 [13] https://www.youtube.com/watch?v=HXV3zeQKqGY
+
 [14] https://www.youtube.com/watch?v=iiQPXcQHaz8&list=
 PLi1BmHvgBkxI4uBS5vjfhqhAUWPnRL73
+
 [15] https://www.youtube.com/watch?v=GHVkRo3CRo4
+
 [16] https://www.phind.com
+
 [17] https://bard.google.com/?hl=en
+
 [18] https://chat.openai.com
