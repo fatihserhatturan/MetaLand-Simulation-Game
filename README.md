@@ -1,9 +1,12 @@
 # MetaLand-Simulation-Game
 
-I. AC¸IKLAMA
+I. AC¸IKLAMA :
+
+
 Kocaeli Universitesi Bilgisayar Muhendisligi Programlama 
 Labaratuvarı 2 3.proje hakkında rapor yazısı.
-II. OZET
+II. OZET: 
+
 A. Proje Acıklaması
 Kullanıcıların emlak alabildigi is kurabildigi calısabildi gi,
 kendi icinde ekonomik bir sistemi olan bazı kurallara dayalı
@@ -17,7 +20,8 @@ uzerinde bir cok yetkiye sahiptir kullanıcıların yemek esya
 ve paralarını manipule edebilir.Ayrıca kullanıcıların yemek, 
 esya ve paraları biterse oyunu kaybederler ve bir daha eris¸m
 saglayamazlar. 
-B. Gelistirme Sureci 
+B. Gelistirme Sureci :
+
 Oncellikle bizden istenen metaland simulasyonu oyunu icin 
 c kullandıkC kullanmamızdaki temel etken bizden istenenleri
 rahatlıkla karsılaması, windows form uygulaması kullanımının
@@ -27,12 +31,14 @@ veri tabanı islemleri icin mssql server kullandık, mssql kullanımızdaki teme
 asina olmamız hem de mssqlin arayuz ve kullanımının bize 
 sunulan diger secenekler olan mysql ve postgresql’den daha 
 kolay olması oldu.
+
 Tasarladıgımız Metaland platformunda bulunan kullanıcılar 
 icin tasarlanacak olan veritabanı, varlıklar ve islemlerle ilgili bilgilerin duzenli bir sekilde yonetilmesine yardımcı ola- 
 caktır. Bu sayede kullanıcılar, ihtiyac¸ duydukları bilgilere
 daha kolay bir sekilde ulasabileceklerdir.Veritabanı tabloları
 olusturulurken bizden istendigi sekilde 3nf normalizasyonuna ˘
 uygun olmasına dikkat ettik.
+
 Olusturdugumuz windows form uygulamasında tek bir 
 form uzerinden tum islemleri kontrol etmek icin Usercontrol 
 sınıflarıyla calıstık . Usercontrol sınıfı form classı uzerine teti
@@ -41,6 +47,7 @@ sekilde form1 classı uzerine gerekli durumlar olustugunda
 cagırılmaktadır.Bu controller hem kod yazımını daha duzenli
 ve verimli hale getirmektedir hem de kullanıcı icin daha
 duzenli bir arayuz sunmaktadır. 
+
 Projede olusturdugumuz ER diyagramı mssql’in 
 bize sundugu veritabanı diagramı goruntuleme ozelligi
 kullanarak elde edilmis¸tir. Aynı zamanda bizden
