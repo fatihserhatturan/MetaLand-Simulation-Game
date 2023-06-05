@@ -2,24 +2,26 @@
 
 I. ACIKLAMA :
 
-
 Kocaeli Universitesi Bilgisayar Muhendisligi Programlama 
 Labaratuvarı 2 3.proje hakkında rapor yazısı.
+
 II. OZET: 
 
-A. Proje Acıklaması
+A. Proje Acıklaması:
+
 Kullanıcıların emlak alabildigi is kurabildigi calısabildi gi,
 kendi icinde ekonomik bir sistemi olan bazı kurallara dayalı
 metaland oyunu.Oyuncular belirtilen bolge icindeki bos arazi
 leri satın alabilir,buradaki menkullerin tipini degisebilir bu
 radan ilan acabilir,bu ilan uzerinden kullanıcıları ise alabilir
-belirli bir gelir karsılıgında belirli bir sure calıstırabilir.Ayrıca
-menkul satabilir veya satın alabilir.Haritanın bir de yoneticisi
+belirli bir gelir karsılıgında belirli bir sure calıstırabilir.  
+Ayrıca menkul satabilir veya satın alabilir.Haritanın bir de yoneticisi
 vardır.Yonetici istedigi boyutta harita olusturabilir, bu harita
 uzerinde bir cok yetkiye sahiptir kullanıcıların yemek esya 
 ve paralarını manipule edebilir.Ayrıca kullanıcıların yemek, 
 esya ve paraları biterse oyunu kaybederler ve bir daha eris¸m
 saglayamazlar. 
+
 B. Gelistirme Sureci :
 
 Oncellikle bizden istenen metaland simulasyonu oyunu icin 
@@ -27,14 +29,16 @@ c kullandıkC kullanmamızdaki temel etken bizden istenenleri
 rahatlıkla karsılaması, windows form uygulaması kullanımının
 visual studio uzerinden kullanılmasının kolay olması ve daha 
 oncesinde c diline asina olmamız oldu.Ayrıca bizden istenen
-veri tabanı islemleri icin mssql server kullandık, mssql kullanımızdaki temel etkense hem daha oncesinde kullanımına 
+veri tabanı islemleri icin mssql server kullandık, mssql 
+kullanımızdaki temel etkense hem daha oncesinde kullanımına 
 asina olmamız hem de mssqlin arayuz ve kullanımının bize 
 sunulan diger secenekler olan mysql ve postgresql’den daha 
 kolay olması oldu.
 
 Tasarladıgımız Metaland platformunda bulunan kullanıcılar 
-icin tasarlanacak olan veritabanı, varlıklar ve islemlerle ilgili bilgilerin duzenli bir sekilde yonetilmesine yardımcı ola- 
-caktır. Bu sayede kullanıcılar, ihtiyac¸ duydukları bilgilere
+icin tasarlanacak olan veritabanı, varlıklar ve islemlerle 
+ilgili bilgilerin duzenli bir sekilde yonetilmesine yardımcı olacaktır.
+Bu sayede kullanıcılar, ihtiyac¸ duydukları bilgilere
 daha kolay bir sekilde ulasabileceklerdir.Veritabanı tabloları
 olusturulurken bizden istendigi sekilde 3nf normalizasyonuna ˘
 uygun olmasına dikkat ettik.
@@ -56,7 +60,7 @@ kullandıgımız ortam olan visual studio’nun sınıf
 goruntuleyicisi  ozelli  ginebas¸vurulmustur. [htbp] ˘
 III. YONTEM ¨
 
-A. Giris¸
+A. Giris :
 
 Giris¸ ekranında giris¸ yapan kisiden yonetici girisi mi 
 kullanıcı girisi mi yapmak istedgine gore sectirilir.Veya 
@@ -67,13 +71,13 @@ yonetici tabloları kontrol edilir eger kullanıcı varsa giris¸ yapılır ˘
 yoksa islem basarısız olur.Ayrıca burada oyuncunun kaynakları
 kontrol edilir eger tukenmisse giris¸ yapmasına izin verilmez. 
 
-B. Kayıt Olma
+B. Kayıt Olma :
 
 Kayıt olma ekranında kullanıcıdan bilgiler alınır.Ardından
 metaLand adlı Db de kullanıcı tablosuna kaydedilir.Ve kul-
 lanıcıya kayıt olusturuldu bilgisi verilir.
 
-C. kullanıcı panel
+C. kullanıcı panel :
 
 Burada yoneticiye harita id sorulur.Ve Secilen harita 
 ekrana verilir.Kontrol ekranında yonetici harita numarasını 
@@ -88,17 +92,17 @@ Is¸ talebi kısmında isilanları
 gorunt  ulenebilir uygunsa kabul edilebilir degilse pazarlık
 yapılabilir.Pazar kısmında satılıktaki menkuller satın alınabilir.
 
-D. harita-oyun
+D. Harita-Oyun :
 
 Harita uzerinde gezinme yapılabili, begenilen ya da secilen bir.
-’turVer’ adlı yontem, ’alanNo’ adlı bir tamsayı parametresi ¨
+’turVer’ adlı yontem, ’alanNo’ adlı bir tamsayı parametresi 
 alır. Saglanan baglantı dizesini kullanarak bir SQL verita- ˘
 banına baglanır, bir baglantı acar ve ’alaninfo’ adlı bir tablodan ˘
 veri secmek icin bir SQL komutu calıstırır. Komut, ’alanharita’
 alanının degeri ’singleton.haritaID’ de ˘ giskeninin de ˘ gerieit ˘
 ve ’alanno’ alanının degeri saglanan ’alanNo’ parametresine ˘
-esit olan tum verileri secer. ¨
-Tabloda eslesen bir kayıt bulunursa, yontem kayıttan ¨
+esit olan tum verileri secer. 
+Tabloda eslesen bir kayıt bulunursa, yontem kayıttan 
 ’alanturu alanının degerini alır, bir dizeye donustuur ve 
 ’returnValue’ adlı bir degiskene atar. Son olarak, veritabanı 
 baglantısını kapatır ve ’returnValue’ degerini dondurur. 
@@ -114,7 +118,7 @@ Tabloda eslesen bir kayıt bulunursa, yontem kayıttan ’mag-
 azaucret’ veya ’market ¨ ucretalanının degerini alır, bir diz- 
 eyedonusturur ve ’returnValue’ adlı bir degiskene atar. Son 
 olarak, veritabanı baglantısını kapatır ve ’returnValue’ degerini 
-dondurur. ¨
+dondurur. 
 
 Yani bu method, saglanan ’alanNo’ parametresine ve
 ’alanTur’ parametresine baglı olarak bir SQL veritabanı ˘
@@ -122,7 +126,8 @@ tablosundan fiyat degerini alır. ’yoneticibilgiver’ methodu
 ’talepbilgi’ adlı bir dize parametresi alır ve kullanıcının
 ’esyamiktarı’ veya ’yemekmiktarı’ degerlerini donndurur. 
 Baglantı dizesini kullanarak bir SQL veritabanına baglanır 
-ve ’kullanıcıinfo’ tablosundan ’kullanıcıadı’ alanı ’singleton.oyuncuAd’ degiskeninin degerine esit olan verileri secmek 
+ve ’kullanıcıinfo’ tablosundan ’kullanıcıadı’ alanı ’singleton.oyuncuAd’ 
+degiskeninin degerine esit olan verileri secmek 
 icin bir SQL komutu calıstırır.
 Eger ’talepbilgi’ degeri ’esya’ ise, SQL komutu ’esyamik- 
 tarı alanının degerini secer; eger ’talepbilgi’ degeri ’yemek’ 
@@ -214,7 +219,7 @@ Ornegin, yonetici veya kullanıcı kimligine baglı olarak,
 yonetici veya kullanıcı  ozelliklerine erisim kontrol edilebilir. 
 Bu sayede, daha iyi bir kullanıcı deneyimi saglanabilir ve 
 islemler daha akıcı hale getirilebilir.
-’ur¨ unalclick’ methodu, kullanıcının ¨ ur¨ un satın alma 
+’urunalclick’ methodu, kullanıcının  urun satın alma 
 islemlerindeki temel islevleri gerceklestirir. Oncelikle, kul- 
 lanıcının sectigiurun turune (magaza ya da market) ve adetine 
 gore, kullanıcının parasını azaltır ve urun miktarını artırır. 
@@ -227,7 +232,8 @@ Ardından, kullanıcının sectigiurun miktarını ‘ urunAdet‘
 parametresinde belirleyerek, ‘kullanıcıinfo‘ tablosundaki
 ‘esyamiktarı‘ veya ‘yemekmiktarı‘ alanını gunceller. Bu 
 islem, ‘Update‘ SQL komutunu kullanarak gerceklestirilir.
-Son olarak, kullanıcının parasını artırmak icin ‘sahipParaArtır()‘ methodunu cagırır ve islemin basarılı oldugunu 
+Son olarak, kullanıcının parasını artırmak icin ‘sahipParaArtır()‘ 
+methodunu cagırır ve islemin basarılı oldugunu 
 belirten bir mesaj kutusu goruntuler. 
 Bu method, kullanıcının urun satın alma islemlerini 
 gerceklestirmesini saglayarak, alısveris¸ deneyimini daha iyi 
@@ -237,12 +243,12 @@ methodu ve kullanıcının para miktarını kontrol etmek icin
 ‘kullanıcıParaKontrol()‘ methodu gibi diger methodlarla bir- 
 likte kullanılabilir.
 
-Overall, bu method, bir alısveris¸ islemi sırasında gereken
+Overall, bu method, bir alısveris islemi sırasında gereken
 temel islevleri yerine getirerek, kullanıcıların daha iyi bir
 alısveris¸ deneyimi yasamasını saglar ve islemlerin daha hızlı 
 ve akıcı bir sekilde gerceklestirilmesini saglar. 
 ’isbasvuruonaylaclick’ methodu, bir is bas¸vurusu bilgisi
-olusturmak icin kullanılır. ˙Is basvuruları, ”basvuruinfo” adlı
+olusturmak icin kullanılır. Is basvuruları, ”basvuruinfo” adlı
 bir tabloda saklanır ve bu method, saglanan parametreleri 
 kullanarak yeni bir is basvurusu kaydı olusturur.
 Oncelikle, SqlConnection nesnesi olusturulur ve baglantı 
@@ -258,7 +264,8 @@ Son olarak, SqlCommand nesnesi kullanılarak komut
 calıstırılır ve islem basarılı oldugunda bir mesaj kutusu 
 goruntulenir. 
 
-Bu method, yeni bir isbasvurusu kaydı olusturmak icin kullanılır. ˙Isbas¸vuruları, ”basvuruinfo” adlı bir tabloda saklanır
+Bu method, yeni bir isbasvurusu kaydı olusturmak icin kullanılır. 
+Isbas¸vuruları ”basvuruinfo” adlı bir tabloda saklanır
 ve bu method, saglanan parametreleri kullanarak yeni bir is
 basvurusu kaydı olusturur.
 
@@ -284,20 +291,17 @@ REFERENCES :
 
 [8] https://www.youtube.com/watch?v=PzP8mw7JUzI
 
-[9] https://www.youtube.com/watch?v=qLNLWw82NeE&list=
-PLyQXlWxYAh8-TkeUrN8viS8K69lNK1pDn
+[9] https://www.youtube.com/watch?v=qLNLWw82NeE&list=PLyQXlWxYAh8-TkeUrN8viS8K69lNK1pDn
 
 [10] https://www.youtube.com/watch?v=oSeYvMEH7jc
 
-[11] https://www.youtube.com/watch?v=QXQN8NkINfw&list=
-PLAeYh-ds6kE-VvUUziIn7 pPnwUxcsteF
+[11] https://www.youtube.com/watch?v=QXQN8NkINfw&list=PLAeYh-ds6kE-VvUUziIn7 pPnwUxcsteF
 
 [12] https://www.youtube.com/watch?v=vYDyGxoq9JU
 
 [13] https://www.youtube.com/watch?v=HXV3zeQKqGY
 
-[14] https://www.youtube.com/watch?v=iiQPXcQHaz8&list=
-PLi1BmHvgBkxI4uBS5vjfhqhAUWPnRL73
+[14] https://www.youtube.com/watch?v=iiQPXcQHaz8&list=PLi1BmHvgBkxI4uBS5vjfhqhAUWPnRL73
 
 [15] https://www.youtube.com/watch?v=GHVkRo3CRo4
 
