@@ -266,7 +266,8 @@ E. UML diyagramı :<img src="http://url/to/img.png" alt="alt text" width="320" h
 
 F. ER diyagramı :
 
-REFERENCES
+REFERENCES :
+
 [1] https://www.youtube.com/watch?v=2EkMrrX9sYY&t=8038s
 
 [2] https://www.youtube.com/watch?v=L86eqtdC2as&t=3633s
