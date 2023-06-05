@@ -281,7 +281,7 @@ REFERENCES :
 
 [3] https://learnsql.com/blog/sql-basics-cheat-sheet/
 
-[4] https://www.youtube.com/watch?v=q F4PyW8GTg
+[4] https://www.youtube.com/watch?v=qF4PyW8GTg
 
 [5] https://dotnet.microsoft.com/en-us/learn/csharp
 
@@ -295,7 +295,7 @@ REFERENCES :
 
 [10] https://www.youtube.com/watch?v=oSeYvMEH7jc
 
-[11] https://www.youtube.com/watch?v=QXQN8NkINfw&list=PLAeYh-ds6kE-VvUUziIn7 pPnwUxcsteF
+[11] https://www.youtube.com/watch?v=QXQN8NkINfw&list=PLAeYh-ds6kE-VvUUziIn7pPnwUxcsteF
 
 [12] https://www.youtube.com/watch?v=vYDyGxoq9JU
 
