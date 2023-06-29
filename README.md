@@ -269,9 +269,6 @@ Isbas¸vuruları ”basvuruinfo” adlı bir tabloda saklanır
 ve bu method, saglanan parametreleri kullanarak yeni bir is
 basvurusu kaydı olusturur.
 
-E. UML diyagramı :<img src="http://url/to/img.png" alt="alt text" width="320" height="180">
-
-F. ER diyagramı :
 
 REFERENCES :
 
