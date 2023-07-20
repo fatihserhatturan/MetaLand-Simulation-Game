@@ -302,8 +302,3 @@ REFERENCES :
 
 [15] https://www.youtube.com/watch?v=GHVkRo3CRo4
 
-[16] https://www.phind.com
-
-[17] https://bard.google.com/?hl=en
-
-[18] https://chat.openai.com
